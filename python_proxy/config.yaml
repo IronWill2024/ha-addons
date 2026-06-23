@@ -11,8 +11,10 @@ init: false
 options:
   auth_user: "dev_user"        # Thay bằng username của bạn
   auth_pass: "P@ssword123_S3cur3" # Thay bằng pass cực khó
+  log_level: "Info"
 schema:
   auth_user: str
   auth_pass: str
+  log_level: list(Info|Connect|Notice|Warning|Error|Critical)
 ports:
   8888/tcp: 8888
