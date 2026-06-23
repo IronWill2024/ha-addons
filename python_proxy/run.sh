@@ -24,7 +24,7 @@ Allow 0.0.0.0/0
 EOF
 
 if [ -n "$USER" ] && [ "$USER" != "null" ]; then
-    echo "BasicAuth \"${USER}\" \"${PASS}\"" >> /etc/tinyproxy/tinyproxy.conf
+    echo "BasicAuth ${USER} ${PASS}" >> /etc/tinyproxy/tinyproxy.conf
 fi
 
 exec /usr/bin/tinyproxy -d
