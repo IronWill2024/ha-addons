@@ -10,7 +10,7 @@ arch:
 init: false
 options:
   auth_user: "dev_user"        # Thay bằng username của bạn
-  auth_pass: "P@ssword123_S3cur3" # Thay bằng pass cực khó
+  auth_pass: "Password123_S3cur3" # Thay bằng pass cực khó (Lưu ý: KHÔNG dùng ký tự @)
   log_level: "Info"
 schema:
   auth_user: str
