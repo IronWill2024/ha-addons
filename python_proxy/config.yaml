@@ -1,7 +1,7 @@
-name: "Python HTTP Proxy"
-version: "1.1.0"
-slug: "python_http_proxy"
-description: "Lightweight HTTP Forward Proxy for Python scripts"
+name: "Tiny Forward Proxy"
+version: "1.1.1"
+slug: "tiny_forward_proxy"
+description: "Lightweight HTTP/HTTPS Forward Proxy to route traffic through your Home IP"
 arch:
   - aarch64
   - amd64

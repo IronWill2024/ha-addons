@@ -1,4 +1,4 @@
-# Python HTTP Proxy Add-on
+# Tiny Forward Proxy Add-on
 
 ## Giới thiệu
 Đây là một HTTP/HTTPS Forward Proxy siêu nhẹ (dựa trên bộ nhân Tinyproxy) dành cho Home Assistant.

@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.1.1] - Đổi tên Add-on
+- Đổi tên Add-on thành "Tiny Forward Proxy" cho chuyên nghiệp và sát nghĩa hơn.
+
 ## [1.1.0] - Cập nhật lớn
 - Thêm tài liệu hướng dẫn sử dụng chi tiết (DOCS.md) giúp đọc ngay trong Home Assistant.
 - Thêm tuỳ chọn thay đổi mức độ hiển thị log (`log_level`).
