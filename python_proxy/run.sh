@@ -16,7 +16,7 @@ Port 8888
 Timeout 600
 DefaultErrorFile "/usr/share/tinyproxy/default.html"
 StatFile "/usr/share/tinyproxy/stats.html"
-Logfile "/dev/stdout"
+Logfile "/var/log/tinyproxy/tinyproxy.log"
 LogLevel ${LOG_LEVEL}
 PidFile "/var/run/tinyproxy/tinyproxy.pid"
 MaxClients 100
@@ -26,5 +26,9 @@ EOF
 if [ -n "$USER" ] && [ "$USER" != "null" ]; then
     echo "BasicAuth ${USER} ${PASS}" >> /etc/tinyproxy/tinyproxy.conf
 fi
+
+touch /var/log/tinyproxy/tinyproxy.log
+chown tinyproxy:tinyproxy /var/log/tinyproxy/tinyproxy.log
+tail -f /var/log/tinyproxy/tinyproxy.log &
 
 exec /usr/bin/tinyproxy -d
