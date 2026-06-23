@@ -21,7 +21,10 @@ LogLevel ${LOG_LEVEL}
 PidFile "/var/run/tinyproxy/tinyproxy.pid"
 MaxClients 100
 Allow 0.0.0.0/0
-BasicAuth ${USER} ${PASS}
 EOF
+
+if [ -n "$USER" ] && [ "$USER" != "null" ]; then
+    echo "BasicAuth \"${USER}\" \"${PASS}\"" >> /etc/tinyproxy/tinyproxy.conf
+fi
 
 exec /usr/bin/tinyproxy -d
