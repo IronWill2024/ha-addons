@@ -1,5 +1,5 @@
 name: "Python HTTP Proxy"
-version: "1.0.0"
+version: "1.1.0"
 slug: "python_http_proxy"
 description: "Lightweight HTTP Forward Proxy for Python scripts"
 arch:
